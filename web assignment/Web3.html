@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Assignment 03</title>
+</head>
+<body>
+<!--                  Create Form               -->
+<!--<h1>Assignment No. 03</h1>-->
+
+<h1>Register</h1>
+<form>
+    <label for="FName">First Name:</label>
+    <input type="text" id="FName" placeholder="Manoj" required>
+    <label for="LName">Last Name:</label>
+    <input type="text" id="LName" placeholder="Yadav" required><br>
+
+
+    <label for="male">Male</label>
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="female">Female</label>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="others">Others</label>
+    <input type="radio" id="others" name="gender" value="Others"><br>
+
+
+
+    <label for="Email">Email:</label>
+    <input type="email" id="Email" pattern="[^ @]*@[^ @]*" placeholder="your email" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password"  minlength="5" maxlength="10"  placeholder="your password"><br>
+
+    <label for="bday">Birthday:</label>
+    <select name="bhday" id="bday">
+
+    <option selected value="">Month</option>
+    <option value='1'>Janaury</option>
+    <option value='2'>February</option>
+    <option value='3'>March</option>
+    <option value='4'>April</option>
+    <option value='5'>May</option>
+    <option value='6'>June</option>
+    <option value='7'>July</option>
+    <option value='8'>August</option>
+    <option value='9'>September</option>
+    <option value='10'>October</option>
+    <option value='11'>November</option>
+    <option value='12'>December</option>
+    </select>
+
+    <select name="bhday" id="bday" value="Day">
+    <option value='1'>1</option>
+    <option value='2'>2</option>
+    <option value='3'>3</option>
+    <option value='4'>4</option>
+    <option value='5'>5</option>
+    <option value='6'>6</option>
+    <option value='7'>7</option>
+    <option value='8'>8</option>
+    <option value='9'>9</option>
+    <option value='10'>10</option>
+    <option value='11'>11</option>
+    <option value='12'>12</option>
+    <option value='13'>13</option>
+    <option value='others'>others</option>
+    </select>
+
+    </select>
+    <select name="bhday" id="bday">
+    <option selected value="">Year</option>
+    <option value='1999'>1999</option>
+    <option value='2000'>2000</option>
+    <option value='2001'>2001</option>
+    <option value='2003'>2003</option>
+
+    <option value='others'>others</option>
+    </select><br>
+
+    <label for="condition"> I agree to the terms and conditions </label>
+    <input type="checkbox" id="condition" value="yes"><br>
+
+    <button type="submit" value="Submit">Submit</button>
+</form>
+
+</body>
+</html>
